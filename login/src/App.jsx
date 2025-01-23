@@ -76,7 +76,7 @@ function App() {
   };
 
   return (
-    <div className="h-screen bg-gradient-to-br from-gray-900 to-gray-800 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 flex items-center justify-center p-4">
       {/* <div className="fixed bottom-4 left-4 bg-white text-white px-4 py-2 rounded-full shadow-lg backdrop-blur-sm flex items-center gap-2 text-sm z-50"> */}
         {/* <Monitor className="w-4 h-4" />
         <span>{getBreakpoint().toUpperCase()}</span>
@@ -85,12 +85,13 @@ function App() {
         </span> */}
       {/* </div> */}
 
-      <div className="w-full max-w-4xl grid md:grid-cols-2 bg-white rounded-3xl overflow-hidden shadow-2xl">
+      <div className="w-full  max-w-4xl grid md:grid-cols-2 bg-white rounded-3xl overflow-hidden shadow-2xl">
         <div className="p-8 md:p-12">
           <div className="mb-8">
             <div className="flex items-center gap-2 mb-2">
               <div className="w-9 h-9 bg-black rounded-full  flex items-center justify-center mb-20">
-                <span className="text-white font-bold mb-1.5 font-mono text-[px] ">Flx</span>
+                <span className="text-white font-bold mb-1.5 font-mono text-[17px] ">
+                    <span className='text-yellow-300'>F</span>lx</span>
               </div>
               <span className="font-bold text-3xl mb-20 ">RU<span className='text-yellow-300 font-bold'>I</span>X</span>
             </div>
@@ -159,7 +160,7 @@ function App() {
         <div className="hidden md:block bg-gradient-to-br from-gray-800 to-black">
           <img src ="https://images.pexels.com/photos/30286786/pexels-photo-30286786/free-photo-of-colorful-kite-in-bali-s-clear-summer-sky.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
          alt="pen"
-            className="w-full h-full object-cover  "
+            className="w-full h-full object-cover"
           />
         </div>
       </div>
