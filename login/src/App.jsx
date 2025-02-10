@@ -1,4 +1,4 @@
-import  { useState, useEffect } from 'react';
+import  { useState} from 'react';
 import { LoaderCircle, CircleAlert , CircleCheckBig, Eye, EyeOff , X,  } from "lucide-react";
 // import { Monitor } from 'lucide-react';
 
@@ -13,6 +13,7 @@ function App() {
   //   width: window.innerWidth,
   //   height: window.innerHeight,
   // });
+  
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -20,17 +21,17 @@ function App() {
     rememberMe: false,
   });
 
-  useEffect(() => {
-    const handleResize = () => {
-      // setScreenSize({
-      //   width: window.innerWidth,
-      //   height: window.innerHeight,
-      // });
-    };
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     // setScreenSize({
+  //     //   width: window.innerWidth,
+  //     //   height: window.innerHeight,
+  //     // });
+  //   };
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  //   window.addEventListener('resize', handleResize);
+  //   return () => window.removeEventListener('resize', handleResize);
+  // }, []);
 
   // const getBreakpoint = () => {
   //   const width = screenSize.width;
